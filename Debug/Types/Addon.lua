@@ -15,8 +15,15 @@
 ---@field Core LS_Core
 
 ---@class LS_ContactsFrame : Frame
+---@field TopDivider Texture
+---@field ScrollBox Frame
+---@field ActionButton Button
 ---@field BottomDivider Texture
 
 ---@class LS_Core : AceAddon
 
 ---@class LS_SocialFrame
+
+---@class LS_SocialSideWindowType
+---@field IgnoreListFrame number
+---@field BattleNetBroadcastFrame number
