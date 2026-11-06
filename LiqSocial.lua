@@ -12,3 +12,7 @@ local Data = addon.Data
 function Core:OnInitialize()
   Data:Initialize()
 end
+
+function Core:OnEnable()
+  addon.SocialFrame:Enable()
+end

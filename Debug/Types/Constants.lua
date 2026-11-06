@@ -1,0 +1,2 @@
+---@class LS_Constants
+---@field frameWidth number
