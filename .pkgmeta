@@ -1,0 +1,27 @@
+package-as: LiqSocial
+
+enable-nolib-creation: no
+
+ignore:
+  - Debug
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+externals:
+  Libs/LibStub:
+    url: https://repos.wowace.com/wow/libstub/trunk
+    tag: "1.0"
+  Libs/CallbackHandler-1.0:
+    url: https://repos.wowace.com/wow/callbackhandler/trunk/CallbackHandler-1.0
+    tag: "1.0.9"
+  Libs/LiqUI:
+    url: https://github.com/DennisRas/LiqUI.git
+    tag: "v1.3.4"
+  Libs/AceAddon-3.0:
+    url: https://repos.wowace.com/wow/ace3/trunk/AceAddon-3.0
+    tag: "Release-r1377"
+  Libs/AceDB-3.0:
+    url: https://repos.wowace.com/wow/ace3/trunk/AceDB-3.0
+    tag: "Release-r1377"

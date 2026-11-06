@@ -1,0 +1,22 @@
+## Interface: 120105, 16001
+## Title: Liq Social
+## Notes: Compact friends list for retail and WoW Forever.
+## Version: @project-version@
+## Author: Liquidor
+## SavedVariables: LiqSocialDB
+## X-Website: https://github.com/DennisRas/LiqSocial
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LiqUI\LiqUI.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+
+Boot.lua
+Data.lua
+LiqSocial.lua
+
+#@debug@
+Debug\Types\Addon.lua
+Debug\Types\Data.lua
+#@end-debug@
