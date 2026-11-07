@@ -1,0 +1,104 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+  <Button name="LiqSocialFriendRowTemplate" virtual="true"
+    registerForClicks="LeftButtonUp, RightButtonUp">
+    <Size x="400" y="22" />
+    <Layers>
+      <Layer level="BACKGROUND">
+        <Texture parentKey="Stripe" hidden="true">
+          <Anchors>
+            <Anchor point="TOPLEFT" />
+            <Anchor point="BOTTOMRIGHT" />
+          </Anchors>
+          <Color r="1" g="1" b="1" a="0.05" />
+        </Texture>
+        <Texture parentKey="Selected" hidden="true">
+          <Anchors>
+            <Anchor point="TOPLEFT" />
+            <Anchor point="BOTTOMRIGHT" />
+          </Anchors>
+          <Color r="1" g="1" b="1" a="0.12" />
+        </Texture>
+      </Layer>
+      <Layer level="ARTWORK">
+        <Texture parentKey="PresenceIcon">
+          <Size x="16" y="16" />
+          <Anchors>
+            <Anchor point="LEFT" x="4" y="0" />
+          </Anchors>
+        </Texture>
+        <Texture parentKey="GameIcon">
+          <Size x="18" y="18" />
+          <Anchors>
+            <Anchor point="RIGHT" x="-8" y="0" />
+          </Anchors>
+        </Texture>
+        <Texture parentKey="FavoriteIcon">
+          <Size x="16" y="16" />
+          <Anchors>
+            <Anchor point="RIGHT" relativeKey="$parent.GameIcon" relativePoint="LEFT" x="-28" y="0" />
+          </Anchors>
+        </Texture>
+      </Layer>
+      <Layer level="OVERLAY">
+        <FontString parentKey="AccountName" inherits="GameFontHighlightSmall" justifyH="LEFT"
+          justifyV="MIDDLE" wordwrap="false">
+          <Size x="128" y="16" />
+          <Anchors>
+            <Anchor point="LEFT" relativeKey="$parent.PresenceIcon" relativePoint="RIGHT" x="6"
+              y="0" />
+          </Anchors>
+        </FontString>
+        <FontString parentKey="Level" inherits="GameFontHighlightSmall" justifyH="RIGHT"
+          justifyV="MIDDLE" wordwrap="false">
+          <Size x="36" y="16" />
+          <Anchors>
+            <Anchor point="LEFT" relativeKey="$parent.AccountName" relativePoint="RIGHT" x="6" y="0" />
+          </Anchors>
+        </FontString>
+        <FontString parentKey="CharacterName" inherits="GameFontHighlightSmall" justifyH="LEFT"
+          justifyV="MIDDLE" wordwrap="false">
+          <Size x="117" y="16" />
+          <Anchors>
+            <Anchor point="LEFT" relativeKey="$parent.Level" relativePoint="RIGHT" x="6" y="0" />
+          </Anchors>
+        </FontString>
+        <FontString parentKey="Note" inherits="GameFontHighlightSmall" justifyH="LEFT"
+          justifyV="MIDDLE" wordwrap="false">
+          <Size x="175" y="16" />
+          <Anchors>
+            <Anchor point="RIGHT" relativeKey="$parent.FavoriteIcon" relativePoint="LEFT" x="-6"
+              y="0" />
+          </Anchors>
+        </FontString>
+        <FontString parentKey="Location" inherits="GameFontHighlightSmall" justifyH="LEFT"
+          justifyV="MIDDLE" wordwrap="false">
+          <Anchors>
+            <Anchor point="LEFT" relativeKey="$parent.CharacterName" relativePoint="RIGHT" x="6"
+              y="0" />
+            <Anchor point="RIGHT" relativeKey="$parent.Note" relativePoint="LEFT" x="-6" y="0" />
+          </Anchors>
+        </FontString>
+      </Layer>
+    </Layers>
+    <Frames>
+      <Frame parentKey="GroupIcon">
+        <Size x="16" y="16" />
+        <Anchors>
+          <Anchor point="RIGHT" relativeKey="$parent.GameIcon" relativePoint="LEFT" x="-6" y="0" />
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture parentKey="Icon" setAllPoints="true" />
+          </Layer>
+        </Layers>
+      </Frame>
+    </Frames>
+    <HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+      <Anchors>
+        <Anchor point="TOPLEFT" />
+        <Anchor point="BOTTOMRIGHT" />
+      </Anchors>
+    </HighlightTexture>
+  </Button>
+</Ui>

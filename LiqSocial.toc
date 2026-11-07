@@ -1,10 +1,13 @@
 ## Interface: 120105, 16001
 ## Title: Liq Social
-## Notes: Compact friends list for retail and WoW Forever.
+## Notes: Liq Social is a compact friends list for Retail and Forever.
 ## Version: @project-version@
 ## Author: Liquidor
+## IconTexture: Interface\AddOns\LiqSocial\Media\Icon.blp
 ## SavedVariables: LiqSocialDB
 ## X-Website: https://github.com/DennisRas/LiqSocial
+## X-Curse-Project-ID: 1788278
+## X-Wago-ID: EGPaxON1
 
 Libs\LibStub\LibStub.lua
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
@@ -16,10 +19,12 @@ Boot.lua
 Constants.lua
 Data.lua
 LiqSocial.lua
-SocialFrame.lua
+FriendRow.xml
 
 #@debug@
+Debug\Anonymize.lua
 Debug\Types\Addon.lua
 Debug\Types\Constants.lua
 Debug\Types\Data.lua
+Debug\Types\FriendRow.lua
 #@end-debug@

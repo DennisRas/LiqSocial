@@ -9,4 +9,3 @@
 ---@class LS_Global
 ---@field dbVersion number
 ---@field liqui LiqUI_DB
----@field logs LiqUI_LoggerDB

@@ -1,6 +1,12 @@
 # Liq Social
 
-Liq Social is a World of Warcraft addon for the friends list on retail and WoW Forever.
+Liq Social is a compact friends list for Retail and Forever.
+
+## Features
+
+- Shows friends as compact rows in the friends window.
+- Moves the add friend, ignore, and broadcast buttons up next to your name.
+- Widens the window, clears broken textures, and removes the collapsible groups.
 
 ## Bugs and feedback
 

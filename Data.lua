@@ -16,11 +16,6 @@ local defaultGlobal = {
     windows = {},
     tables = {},
   },
-  logs = {
-    lines = {},
-    autoScroll = true,
-    autoShow = false,
-  },
 }
 
 ---@type LS_DefaultDB

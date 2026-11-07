@@ -1,2 +1,3 @@
 ---@class LS_Constants
 ---@field frameWidth number
+---@field anonymize boolean
